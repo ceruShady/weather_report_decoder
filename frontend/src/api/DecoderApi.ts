@@ -1,4 +1,5 @@
 import axios, { type AxiosResponse } from "axios";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 export async function fetchDecodedReport(
   reportCode: string
@@ -7,7 +8,7 @@ export async function fetchDecodedReport(
   // console.log(reportString);
 
   const res: AxiosResponse = await axios({
-    url: "http://localhost:3000/decoder/" + reportString,
+    url: API_URL + "/decoder/" + reportString,
     method: "GET",
   });
 
