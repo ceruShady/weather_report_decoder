@@ -1,0 +1,16 @@
+@mixin cont-standardize {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+
+  // background-color: rgb(48, 48, 48);
+}
+
+@mixin flex-standardize {
+  display: flex;
+  align-items: center;
+}
+
+@mixin btn-standardize {
+  cursor: pointer;
+}

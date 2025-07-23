@@ -1,0 +1,24 @@
+@use "./common";
+@use "./FormCodeInput";
+@use "./DecodedGroup.scss";
+
+.cont-wrd-main {
+  width: 1024px;
+}
+
+.cont-decoder {
+  @include common.cont-standardize;
+  @include common.flex-standardize;
+}
+
+.tag-item {
+  padding: 0.5rem 0.8rem;
+  border: 2px solid white;
+  border-radius: 1.5rem;
+}
+
+.cont-result {
+  @include common.cont-standardize;
+
+  margin-top: 1rem;
+}

@@ -1,0 +1,18 @@
+@use "./common";
+
+.cont-decoded-group {
+  @include common.cont-standardize;
+}
+
+.ul-decoded-group {
+  @include common.cont-standardize;
+  margin-top: 0.5rem;
+  list-style-position: inside;
+
+  background-color: #fff;
+  color: #000;
+
+  li {
+    margin-bottom: 0.2rem;
+  }
+}

@@ -1,0 +1,87 @@
+@use "./common";
+
+.form-decoder {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cont-input {
+  width: 100%;
+  height: 5rem;
+  position: relative;
+
+  background-color: white;
+  border-radius: 1rem;
+  border: 4px solid #fff;
+
+  transition: border-color 0.3s ease;
+}
+
+.input-focus {
+  border-color: #8fb3ee;
+}
+
+.input-decoder {
+  background: none;
+  resize: none;
+  border: none;
+  outline: none;
+
+  width: 95%;
+  height: 100%;
+  padding: 0.5rem 0.8rem;
+
+  font-family: Arial, sans-serif;
+}
+
+// .input-decoder:focus {
+//   border-color: #8fb3ee;
+// }
+
+.btn-input-clear {
+  @include common.btn-standardize;
+
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  right: 0.5rem;
+  top: 20%;
+  border-radius: 50%;
+  margin: 0.3rem 0;
+  font-weight: bold;
+  color: rgb(255, 125, 125);
+  background: none;
+  border: 3px solid rgb(255, 125, 125);
+
+  transition-property: color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.btn-input-clear:hover {
+  color: rgb(255, 70, 70);
+  border: 3px solid rgb(255, 70, 70);
+}
+
+.btn-decoder {
+  @include common.btn-standardize;
+
+  width: 5rem;
+  height: 2.2rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  background-color: #fff;
+  border: none;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.btn-decoder:hover {
+  background-color: #b3c7e7;
+  box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.15);
+}
