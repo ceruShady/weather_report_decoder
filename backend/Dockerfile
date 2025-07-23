@@ -24,6 +24,6 @@ COPY ./package*.json ./
 COPY --from=build /usr/src/app/node_modules ./node_modules
 COPY --from=build /usr/src/app/dist ./dist
 
-EXPOSE 8081
+EXPOSE 3000
 
 CMD node dist/src/index.js
