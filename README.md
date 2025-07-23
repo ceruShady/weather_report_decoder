@@ -36,7 +36,7 @@ This end point receives request with "reportCode" param which is a string of enc
 
 ### Frontend
 
-Frontend is a single page application created using Vite with React and TypeScript. The application provides a textarea for input of weather report code and an area below that displays the decoded information.
+Frontend is a single page application created using Vite with React and TypeScript. The application provides a textarea for input of weather report code and an area below that displays the decoded information. This application runs at Port 80
 
 ## How it works
 
